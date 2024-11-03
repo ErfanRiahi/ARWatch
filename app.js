@@ -108,7 +108,7 @@ function onResults(results) {
 
             const cameraWristDistanceCM = (focal_length * actual_wrist_width) / reference_wrist_width
 
-            PWrist.innerHTML = `Wrist width = ${cameraWristDistanceCM}`
+            PWrist.innerHTML = `Distance = ${cameraWristDistanceCM}`
         }
         // Draw the pose landmarks
         // drawConnectors(canvasCtx, results.handsLandmarks, HANDS_CONNECTIONS, { color: '#00FF00', lineWidth: 4 });
