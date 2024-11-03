@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrist Camera Distance</title>
+      <!-- Load MediaPipe Pose -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@latest"></script>
+    <!-- Load Camera Utils for easy webcam setup -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <!-- Load Drawing Utils for drawing landmarks and connections -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+</head>
+<body>
+    <h1>Distance between camera & wrist</h1>
+    <p class="wrist_width"></p>
+    <video class="input_video" style="display:none;"></video>
+    <canvas class="output_canvas" width="640" height="480"></canvas>
+    <script src="app.js"></script>
+</body>
+</html>
