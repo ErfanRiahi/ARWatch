@@ -30,7 +30,7 @@ hands.onResults(onResults);
 // Function to load and process an image directly
 function loadImageAndDetect() {
     const img = new Image();
-    img.src = '../assets/hand_mac.jpg'; // replace with your image data
+    img.src = 'assets/hand_mac.jpg'; // replace with your image data
     img.onload = async () => {
         // Send image to MediaPipe for hand detection
         await hands.send({ image: img });
